@@ -35,5 +35,9 @@ public class AppTest {
     void testAddition3(){
         Assertions.assertNull(App.addition(matrix1, null));
     }
+    @Test
+    void testSubtraction1(){
+
+    }
 
 }
