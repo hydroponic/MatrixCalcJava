@@ -22,4 +22,8 @@ public class AppTest {
         matrix2 = new Matrix(new double[][]{{11, 12, 13}, {2, 3, 1}, {18, 42,0}});
         matrix3 = new Matrix(new double[][]{{1, 5, 9}, {7, 3, 2}, {5, 6, 2}});
     }
+    @Test
+    void testAddition1(){
+
+    }
 }
