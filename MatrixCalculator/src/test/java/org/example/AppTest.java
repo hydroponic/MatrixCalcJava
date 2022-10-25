@@ -59,6 +59,10 @@ public class AppTest {
         Matrix tr = App.transpose(matrix1);
         Assertions.assertArrayEquals(tr.getValues(), new double[][]{{1, 4, 7}, {2, 5, 8}, {3, 6, 9}});
     }
+    @Test
+    void testTranspose2(){
+
+    }
 
 
 }
