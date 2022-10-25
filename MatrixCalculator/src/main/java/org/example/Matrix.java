@@ -16,7 +16,9 @@ public class Matrix {
     }
 
     public Matrix(int nrow, int ncol) {
-
+        this.nrows = nrow;
+        this.ncols = ncol;
+        data = new double[nrow][ncol];
     }
 
     public double[][] getValues() {
