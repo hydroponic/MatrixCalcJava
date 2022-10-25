@@ -29,7 +29,7 @@ public class AppTest {
     }
     @Test
     void testAddition2(){
-
+        Assertions.assertNull(App.addition(matrix1, matrix3));
     }
 
 }
