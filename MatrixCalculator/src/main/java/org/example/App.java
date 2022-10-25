@@ -139,7 +139,7 @@ public class App {
                 transposedMatrix.setValueAt(j, i, matrix.getValueAt(i, j));
             }
         }
-        return transposedMatrix;
+        return null;
     }
 
     public static double determinant(Matrix matrix) throws NoSquareException {
