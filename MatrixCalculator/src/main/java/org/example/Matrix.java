@@ -10,7 +10,9 @@ public class Matrix {
     private double[][] data;
 
     public Matrix(double[][] dat) {
-
+        this.data = dat;
+        this.nrows = dat.length;
+        this.ncols = dat[0].length;
     }
 
     public Matrix(int nrow, int ncol) {
