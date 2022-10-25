@@ -115,7 +115,20 @@ public class App {
 
 
     public static Matrix multiply(Matrix matrix1, Matrix matrix2) throws IllegalDimensionException {
+        if(matrix1 == null || matrix2 == null) return null;
+        if(matrix1.getNcols() != matrix2.getNrows()) throw new IllegalDimensionException("matrix1 colons should be equals matrix2 rows");
+        Matrix multipliedMatrix = new Matrix(matrix1.getNrows(), matrix2.getNcols());
 
+        for (int i=0;i<multipliedMatrix.getNrows();i++) {
+            for (int j=0;j<multipliedMatrix.getNcols();j++) {
+                double sum = 0.0;
+                for (int k=0;k<matrix1.getNcols();k++) {
+                    sum += matrix1.getValueAt(i, k) * matrix2.getValueAt(k, j);
+                }
+                multipliedMatrix.setValueAt(i, j, sum);
+            }
+        }
+        return multipliedMatrix;
     }
 
     public static Matrix transpose(Matrix matrix) {
