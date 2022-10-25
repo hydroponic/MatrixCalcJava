@@ -42,7 +42,7 @@ public class AppTest {
     }
     @Test
     void testSubtraction2(){
-
+        Assertions.assertNull(App.subtraction(matrix1, null));
     }
 
 }
