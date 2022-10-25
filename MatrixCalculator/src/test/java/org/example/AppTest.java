@@ -53,9 +53,11 @@ public class AppTest {
     void testMultiply3(){
         Assertions.assertNull(App.addition(matrix1, null));
     }
+
     @Test
     void testTranspose1(){
-
+        Matrix tr = App.transpose(matrix1);
+        Assertions.assertArrayEquals(tr.getValues(), new double[][]{{1, 4, 7}, {2, 5, 8}, {3, 6, 9}});
     }
 
 
