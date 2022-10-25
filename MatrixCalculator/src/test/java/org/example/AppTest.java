@@ -61,7 +61,7 @@ public class AppTest {
     }
     @Test
     void testTranspose2(){
-
+        Assertions.assertNull(App.transpose(null));
     }
 
 
