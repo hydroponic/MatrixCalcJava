@@ -27,4 +27,9 @@ public class AppTest {
         Matrix sum = App.addition(matrix1, matrix2);
         Assertions.assertArrayEquals(sum.getValues(), new double[][]{{12, 14, 16}, {6, 8, 7}, {25, 50, 9}});
     }
+    @Test
+    void testAddition2(){
+
+    }
+
 }
