@@ -44,5 +44,9 @@ public class AppTest {
     void testSubtraction2(){
         Assertions.assertNull(App.subtraction(matrix1, null));
     }
+    @Test
+    void testMultiply1() throws IllegalDimensionException {
+
+    }
 
 }
