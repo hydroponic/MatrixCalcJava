@@ -70,7 +70,8 @@ public class AppTest {
     }
     @Test
     void testDetermined1() throws NoSquareException {
-
+        Matrix oneDet = new Matrix(new double[][]{{1}});
+        Assertions.assertEquals(1, App.determinant(oneDet));
     }
 
 
