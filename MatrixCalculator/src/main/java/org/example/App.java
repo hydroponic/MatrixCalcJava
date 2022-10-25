@@ -132,7 +132,14 @@ public class App {
     }
 
     public static Matrix transpose(Matrix matrix) {
-
+        if(matrix == null) return null;
+        Matrix transposedMatrix = new Matrix(matrix.getNcols(), matrix.getNrows());
+        for (int i=0;i<matrix.getNrows();i++) {
+            for (int j=0;j<matrix.getNcols();j++) {
+                transposedMatrix.setValueAt(j, i, matrix.getValueAt(i, j));
+            }
+        }
+        return transposedMatrix;
     }
 
     public static double determinant(Matrix matrix) throws NoSquareException {
