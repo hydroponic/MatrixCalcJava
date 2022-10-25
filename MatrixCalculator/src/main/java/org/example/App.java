@@ -177,7 +177,9 @@ public class App {
     }
 
     private static int changeSign(int i) {
-
+        if (i%2==0)
+            return 1;
+        return -1;
     }
 
     public static Matrix cofactor(Matrix matrix) throws NoSquareException {
