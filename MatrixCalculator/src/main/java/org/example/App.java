@@ -160,7 +160,20 @@ public class App {
     }
 
     private static Matrix createSubMatrix(Matrix matrix, int excluding_row, int excluding_col) {
-
+        Matrix mat = new Matrix(matrix.getNrows()-1, matrix.getNcols()-1);
+        int r = -1;
+        for (int i=0;i<matrix.getNrows();i++) {
+            if (i==excluding_row)
+                continue;
+            r++;
+            int c = -1;
+            for (int j=0;j<matrix.getNcols();j++) {
+                if (j==excluding_col)
+                    continue;
+                mat.setValueAt(r, ++c, matrix.getValueAt(i, j));
+            }
+        }
+        return mat;
     }
 
     private static int changeSign(int i) {
