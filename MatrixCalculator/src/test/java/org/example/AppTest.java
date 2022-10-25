@@ -51,7 +51,7 @@ public class AppTest {
     }
     @Test
     void testMultiply3(){
-
+        Assertions.assertNull(App.addition(matrix1, null));
     }
 
 }
