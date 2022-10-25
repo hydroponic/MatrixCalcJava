@@ -68,6 +68,10 @@ public class AppTest {
         Matrix tr = App.transpose(matrix3);
         Assertions.assertArrayEquals(tr.getValues(), new double[][]{{1, 7}, {5, 3}, {9, 2}});
     }
+    @Test
+    void testDetermined1() throws NoSquareException {
+
+    }
 
 
 }
