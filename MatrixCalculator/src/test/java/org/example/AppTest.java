@@ -53,5 +53,10 @@ public class AppTest {
     void testMultiply3(){
         Assertions.assertNull(App.addition(matrix1, null));
     }
+    @Test
+    void testTranspose1(){
+
+    }
+
 
 }
