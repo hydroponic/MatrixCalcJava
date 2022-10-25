@@ -73,6 +73,12 @@ public class AppTest {
         Matrix oneDet = new Matrix(new double[][]{{1}});
         Assertions.assertEquals(1, App.determinant(oneDet));
     }
+    @Test
+    void testDetermined2() throws NoSquareException {
+        Assertions.assertEquals(0, App.determinant(matrix1));
+    }
+    @Test
+    void testCofactor() throws NoSquareException {
 
-
+    }
 }
